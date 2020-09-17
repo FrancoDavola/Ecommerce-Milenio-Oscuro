@@ -1,0 +1,294 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 80px
+}
+
+.box {
+  border: solid;
+}
+#bienvenida {
+  font-family: 'Bangers', cursive;
+  font-size: 64px;  
+  /* background-color: black; */
+  text-align: center;
+  
+}
+#bienvenida2 {
+  font-family: 'Bangers', cursive;
+  font-size: 32px;  
+  /* background-color: black; */
+  text-align: center;
+  
+}
+@media (max-width: 426px) {
+  .onlyMobilePadT{
+    padding-top: 1rem;
+  }
+  }
+
+
+
+
+@media (min-width: 426px) {
+.onlyMobile{
+  display: none;
+}
+}
+
+.mleft {
+margin-left: 12px
+}
+
+.ptop {
+  padding-top: 0.8rem;
+}
+
+@media (max-width: 2560px)  and (min-width: 769px) {
+  .stick-topBigger {
+      position: absolute !important;
+      z-index: 1;
+      right: 15%;
+      width: 20% !important;
+  }
+  }
+
+@media (max-width: 1440px)  and (min-width: 769px) {
+.stick-topBig {
+    position: absolute !important;
+    z-index: 1;
+    right: 5%;
+    width: 25% !important;
+}
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .stick-topMed {
+      position: absolute !important;
+      z-index: 1;
+      right: 0%;
+      width: 40% !important;
+  }
+  }
+
+  @media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+}
+
+/* .prodImg {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+} */
+
+.bannerImg {
+  /* width: 1400px; */
+  /* height: 450px; */
+  height: 390px;
+  width: 100%;
+}
+
+
+@media (min-width: 992px) {
+.col-lg-9 {
+    flex: 0 0 100% !important;   
+    max-width: 100% !important;
+    padding-top: 15px;  
+  } 
+}
+
+
+@media (min-width: 1200px) {
+.navbar-dark {
+  line-height: 2.5;
+  padding: 0rem 1rem;
+}
+}
+
+
+.nav-item {
+  padding-top: 3%;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+.smallerText {
+  font-size: 0.8rem;
+}
+}
+
+#shopping-cart-red{
+  color: #DF0000;
+};
+
+.fa-stack[data-count]:after{
+  position:absolute;
+  right:0%;
+  top:0%;
+  content: attr(data-count);
+  font-size:40%;
+  padding:.6em;
+  border-radius:999px;
+  line-height:.75em;
+  color: white;
+  text-align:center;
+  min-width:2em;
+  font-weight:bold;
+  background: white;
+  border-style:solid;
+}
+
+.red-cart {
+	color: #DF0000; 
+}
+
+.fa-stack-2x {
+  font-size: 1em;
+  padding-top: 14px;
+}
+
+/* Footer */
+
+.marg-top {
+  margin-top: 1.4rem;
+}
+
+.pt-3r{
+  padding-top: 3rem;
+}
+
+.line-h-sm {
+  line-height: .5rem;
+}
+
+.marg-sides{
+  margin-left:1rem;
+  margin-right: 1rem;
+}
+
+.mg-tb-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+.ft-small{
+  font-size: .8rem;
+}
+}
+
+@media (max-width: 1024px) {
+.marg-sides-1024 {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+}
+
+@media (max-width: 768px) {
+  .d-noneTab{
+    display: none;
+  }
+  }
+
+@media (max-width: 425px) {
+.d-noneCel{
+  display: none !important;
+}
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+
+.footer_full_width { 
+  width: 100%;
+  max-width: 1560px;
+ }
+
+ .marg-top_2 {
+  margin-top: 3rem;
+}
+
+.marg-bot_30 {
+  margin-bottom: 35rem;
+}
+
+.marg-bot_5 {
+  margin-bottom: 5rem;
+}
+
+.marg-top_5 {
+  margin-top: 5rem;
+}
+
+.marg-top_neg {
+  margin-top: -2.5rem;
+}
+
+.vis_hidden {
+  display: none !important;
+}
+
+.smaller_but {
+  margin-right: auto;
+  margin-left: auto;
+  width: 65% !important;
+}
+
+@media (min-width: 2560px) {
+  .smallerImg4k {
+    max-width: 2025px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .small_txt{
+    font-size: 12px;
+  }
+  }
+
+  @media (max-width: 375px) {
+    .smaller_txt{
+      font-size: 10px;
+    }
+    }
+
+    @media (max-width: 320px) {
+      .smallest_txt{
+        font-size: 10px;
+      }
+      }
+
+    .hr.rounded {
+      border-top: 8px solid #bbb;
+      border-radius: 5px;
+    }
+    
+    .wid_70 {
+      width: 70%;
+    }
+
+/*     h1 {
+      text-shadow: 0 0 3px #FF0000, 0 0 5px #ff0015;
+    }
+ */
+    .marg_bot_10{
+      margin-bottom: 10rem;
+    }
+
+    @media (max-width: 425px) {
+      .mobile_smallerTxt{
+        font-size: 40px !important;
+      }
+      }

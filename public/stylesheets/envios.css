@@ -1,0 +1,17 @@
+.container {
+    height: 100%;
+    width: 100%;
+    ;
+
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+#fondo {
+    background-image: url("../images/logoEditadotransp.png");
+    background-size: 80px 35px;
+  
+}

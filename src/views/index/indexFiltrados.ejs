@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Home -Milenio Oscuro</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="/stylesheets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/stylesheets/shop-homepage.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<%- include('../partials/headerPrueba') %> 
+
+  <!-- Page Content -->
+
+<%- include('../partials/bannersCarousel') %> 
+<div>
+  <h1 class= "mobile_smallerTxt" id="bienvenida">
+    <% if (cat == "comics")  { %> 
+    COMICS
+    <% }%>
+
+    <% if (cat == "videoJuegos")  { %> 
+      VIDEO JUEGOS
+    <% }%>
+
+    <% if (cat == "juegosDeMesa")  { %> 
+      JUEGOS DE MESA
+    <% }%>
+
+    <% if (oferta == "on")  { %> 
+      OFERTAS
+    <% }%>
+    
+  </h1>
+  <hr class="rounded wid_70">
+</div>
+  <section class="text-center marg-top2">
+    <div class="container">
+
+    </div>
+</section>
+  
+  <div class="container marg-top2">
+
+        <div class="row">            
+
+          <% products.forEach(product => { %>
+
+            <div class="col-lg-3 col-md-6 mb-4 ">
+              <div class="card h-100" style="height: 84%!important;">
+                <div style="height: 78%;">
+                <a href=   "/products/detail/<%= product.id %>"><img  class="card-img-top prodImg" style="height: 100%;" src="/images/<%= product.image %>" alt=""></a>
+              </div>
+                <div  class="card-body" style="padding: 8px;">
+                  <h4 class="card-title">
+                    <a style="font-size: 17px;color: black;" href="/products/detail/<%= product.id %>"><%= product.name %></a>
+                  </h4>
+                  <% if (product.offer == "on")  { %> 
+                  <h5 style="float: left;font-size: 24px;">$<%= toThousand(product.newprice) %></h5>
+                  <div class="d-flex justify-content-end">
+                  <span class="badge badge-success">¡Oferta!</span>
+                </div>
+                  <% } else { %>
+                    <h5 style="font-size: 24px;">$<%= toThousand(product.price) %></h5>
+                    <% }%>
+                </div>
+               
+              </div>
+            </div>
+
+          <% }) %>
+
+        </div>
+        <!-- /.row -->
+
+
+        
+          <%- include('../partials/pagination') %>
+      
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <%- include('../partials/footerPrueba') %>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/javascripts/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript" src="/javascripts/app.js"></script>
+
+</body>
+
+</html>
